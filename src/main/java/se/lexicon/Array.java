@@ -10,7 +10,7 @@ public class Array {
         int[] numbers = {11, 23, 31, 42, 54};
 
         for (int number : numbers ) {
-            System.out.println(number);
+            System.out.print(number);
         }
     }
 
@@ -179,5 +179,27 @@ public class Array {
             }
         }
 
+    }
+
+    //-------------------------------------------------------------//
+
+    public static void sortSpecCopy () {
+        int[] numbers = {1, 2, 4, 5, 7, 8, 9, 10};
+        int[] newNumbers = {};
+        int[] evenNumbers = {};
+
+        for (int number: numbers) {
+            if (number % 2 != 0) {
+                newNumbers = combine(newNumbers, number);
+            } else {
+                evenNumbers = combine(evenNumbers, number);
+            }
+        }
+
+        for (int number: evenNumbers) {
+            newNumbers = combine(newNumbers, number);
+        }
+
+        System.out.println(Arrays.toString(newNumbers));
     }
 }

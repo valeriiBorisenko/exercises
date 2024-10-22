@@ -12,6 +12,7 @@ public class Main {
         //Array.deleteDuplicate();
         //Array.addElement();
         //Array.multiplicationTable();
-        Array.diagonalElements();
+        //Array.diagonalElements();
+        Array.sortSpecCopy();
     }
 }
