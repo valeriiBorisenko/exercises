@@ -11,5 +11,6 @@ public class Main {
         //Array.unevenNumbers();
         //Array.deleteDuplicate();
         //Array.addElement();
+        Array.multiplicationTable();
     }
 }

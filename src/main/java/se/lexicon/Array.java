@@ -124,7 +124,7 @@ public class Array {
         Scanner scanner = new Scanner(System.in);
 
         while (isActive) {
-            System.out.println("Write number:");
+            System.out.println("Write a number:");
             try {
                 int number = scanner.nextInt();
 
@@ -134,7 +134,7 @@ public class Array {
                 } else if (number == 0) {
                     isActive = false;
                 } else {
-                    System.out.println("Please enter number");
+                    System.out.println("Please enter a number:");
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Error");
@@ -142,5 +142,21 @@ public class Array {
             }
         }
     }
+
+    public static void multiplicationTable () {
+        int[] line = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[][] multiArray = new int[10][10];
+
+        for (int i = 0; i < line.length; i++) {
+            for (int j = 0; j < line.length; j++) {
+                multiArray[i][j] = line[i] * line[j];
+            }
+        }
+
+        for (int[] array: multiArray) {
+            System.out.println(Arrays.toString(array));
+        }
+    }
+
 
 }
