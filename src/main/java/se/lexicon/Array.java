@@ -143,6 +143,8 @@ public class Array {
         }
     }
 
+    //-------------------------------------------------------------//
+
     public static void multiplicationTable () {
         int[] line = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int[][] multiArray = new int[10][10];
@@ -158,5 +160,24 @@ public class Array {
         }
     }
 
+    //-------------------------------------------------------------//
 
+    public static void diagonalElements () {
+        int[] arrayLine = {1, 2, 3};
+        int[][] arrayNew = new int[3][3];
+
+        for (int i = 0; i < arrayLine.length; i++) {
+            for (int j = 0; j < arrayLine.length; j++) {
+                arrayNew[i][j] = arrayLine[i] * arrayLine[j];
+            }
+        }
+        for (int i = 0; i < arrayNew.length; i++) {
+            for (int j = 0; j < arrayNew.length; j++) {
+                if (i == j) {
+                    System.out.println(arrayNew[i][i]);
+                }
+            }
+        }
+
+    }
 }
